@@ -1,12 +1,10 @@
 # ANSI C Compiler
-
-## Introduction
 This program is a compiler, intended to convert 
 ANSI C code to ARM assembly code, to be run on a 
 Raspberry Pi. An overview of the control and parsing
 flow can be found in "Compilers Report.docx"
 
-## DESIGN SYSTEM INFORMATION
+## Design System Information
 This program was designed and written using a
 virtual machine using VirtualBox, hosted by 
 MacOS 10.9 and running Ubuntu v.12.04 LTS 32 bit.
@@ -15,7 +13,7 @@ MacOS 10.9 and running Ubuntu v.12.04 LTS 32 bit.
 - `gcc` version		: `4.6.3`
 
 
-## INCLUDED FILES
+## Files
 - `Compiler.cpp`
 - `Compiler.l`
 - `Compiler.y`
@@ -28,7 +26,7 @@ MacOS 10.9 and running Ubuntu v.12.04 LTS 32 bit.
 - `Compilers Report.docx`
 
 
-## COMPILATION INSTRUCTIONS
+## Compilation Instructions
 To compile the preprocessor:
 
 `g++ PreProcessor.cpp -o PreProcessor -L/usr/lib/ -lboost_regex-mt`
@@ -37,11 +35,10 @@ To compile the compiler:
 
 `make`
 
-
-## RUNNING INSTRUCTIONS
+## Execution Instructions
 ### 1) The easy way:
-A shell script is included in this folder, called "run".
-It will output to a file called "ASMOUT.s", and takes
+A bash script is included in this folder, called `run`.
+It will output to a file called `ASMOUT.s`, and takes
 one argument - the file to be compiled.
 To use:
 
