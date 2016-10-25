@@ -2,7 +2,10 @@
 This program is a compiler, intended to convert 
 ANSI C code to ARM assembly code, to be run on a 
 Raspberry Pi. An overview of the control and parsing
-flow can be found in "Compilers Report.docx"
+flow can be found in `Compilers Report.docx`. The 
+core of the system is the grammar, found in `Compiler.y`.
+Tokenization is performed in the manner outlined by 
+`Compiler.l`.
 
 ## Design System Information
 This program was designed and written using a
