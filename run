@@ -1,0 +1,2 @@
+./PreProcessor $1 > preprocessed.txt
+cat "preprocessed.txt" | ./Compiler > ASMOUT.s
